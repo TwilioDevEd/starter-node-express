@@ -106,8 +106,8 @@ are a paid feature of ngrok):
 ngrok http -subdomain=chunky-danger-monkey 3000
 ```
 
-In your Twilio number configuration, you would then need to add `/voice` as the
-Voice URL route, and `/message` as the Messaging URL.
+In your Twilio number configuration, you would then need to add `/calls` as the
+Voice URL route, and `/messages` as the Messaging URL.
 
 ## License
 
