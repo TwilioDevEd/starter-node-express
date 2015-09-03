@@ -1,6 +1,6 @@
 {
-  "name": "Node.js/Express Twilio Starter",
-  "description": "Twilio Starter Application for Node.js - do not leave running on Heroku!",
+  "name": "Node.js/Express Starter",
+  "description": "Starter Application for Node.js",
   "keywords": [
     "twilio",
     "node.js",
@@ -23,7 +23,7 @@
     },
     "MY_NUMBER": {
       "description": "Your own mobile phone number! The app will be calling and texting you. Specify in E.164 format (e.g. +16519991111)",
-      "required": true
+      "required": false
     },
     "HTTP_BASIC_USERNAME": {
       "description": "HTTP Basic Auth username to log into this demo app (default: admin)",

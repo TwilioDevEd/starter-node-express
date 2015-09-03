@@ -39,41 +39,7 @@ html(lang='en')
     nav.navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
-
-          //- Nav bar toggle for mobile
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse',
-            data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-            i.fa.fa-bars
-
-          a.navbar-brand(href='/') Twilio Starter
-
-        #navbar.navbar-collapse.collapse
-          ul.nav.navbar-nav.navbar-right
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', 
-                aria-expanded='false') Messaging 
-                span.caret
-
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='/message/send') Send Messages
-                li
-                  a(href='/message') Receive Messages
-
-            li.dropdown
-              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', 
-                aria-expanded='false') Voice 
-                span.caret
-
-              ul.dropdown-menu(role='menu')
-                li
-                  a(href='/voice/call') Make Calls
-                li
-                  a(href='/voice') Receive Calls
-
-            li
-              a(href='/voip') VoIP
-
+          a.navbar-brand(href='/messages') Messages
 
     //- Include page content
     #main.container

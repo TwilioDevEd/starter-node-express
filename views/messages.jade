@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  table.table
+    tr
+      th From
+      th Message Body
+    each message in messages
+      tr
+        td= message.from
+        td= message.body

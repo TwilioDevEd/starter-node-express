@@ -10,8 +10,10 @@ var config = require('./config');
 var app = express();
 app.set('view engine', 'jade');
 
-// Use morgan for HTTP request logging
-app.use(morgan('combined'));
+// Use morgan for HTTP request logging in dev and prod
+if (process.env.NODE_ENV !== 'test') {
+    app.use(morgan('combined'));
+}
 
 // Serve static assets
 app.use(express.static(path.join(__dirname, 'public')));

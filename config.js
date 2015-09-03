@@ -3,9 +3,7 @@ var cfg = {};
 // HTTP Port to run our web application
 cfg.port = process.env.PORT || 3000;
 
-// Username/pass to protect demo pages for this app. This application can send
-// messages and make calls for your account, so we don't want just anyone doing
-// it!
+// HTTP Basic auth config, for light weight security on our demo app
 cfg.basic = {
     username: process.env.HTTP_BASIC_USERNAME || 'admin',
     password: process.env.HTTP_BASIC_PASSWORD || 'password'
@@ -29,7 +27,7 @@ cfg.authToken = process.env.TWILIO_AUTH_TOKEN;
 // Specify in E.164 format, e.g. "+16519998877"
 cfg.twilioNumber = process.env.TWILIO_NUMBER;
 
-// Your own mobile phone number! The app will be calling and texting you to
+// Your own mobile phone number! The app may be calling and texting you to
 // test things out. Specify in E.164 format, e.g. "+16519998877"
 cfg.myNumber = process.env.MY_NUMBER;
 
