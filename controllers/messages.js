@@ -1,5 +1,5 @@
 var sanitizeHtml = require('sanitize-html');
-var twilio = require('twilio');
+var MessagingResponse = require('twilio').twiml.MessagingResponse;
 var Message = require('../models/Message');
 
 // create a new message when Twilio sends us a text
@@ -20,7 +20,7 @@ exports.create = function(request, response) {
 
     // return a TwiML response
     function reply(message) {
-        var twiml = new twilio.TwimlResponse();
+        var twiml = new MessagingResponse();
         twiml.message(message);
         response.type('text/xml');
         response.send(twiml.toString());
