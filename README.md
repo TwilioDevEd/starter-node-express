@@ -8,10 +8,6 @@ creating Node.js web applications generally.
 This sample application demonstrates how to receive incoming SMS messages and
 store them in a MongoDB database.
 
-## Deploy On Heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/TwilioDevEd/starter-node-express)
-
 ## Running the Project on Your Machine
 
 To run this project on your computer, download or clone the source. You will 
